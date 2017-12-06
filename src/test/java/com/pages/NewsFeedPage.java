@@ -10,7 +10,7 @@ public class NewsFeedPage extends Base {
 
     public NewsFeedPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(this.driver, NewsFeedPage.class);
+        PageFactory.initElements(this.driver, this);
     }
 
     @FindBy(xpath = "//*[@id=\"u_0_a\"]/div[1]/div[1]/div/a/span/span")
